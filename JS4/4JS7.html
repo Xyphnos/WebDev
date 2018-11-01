@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, n2, n3, n4, n5, e1, e2, e3, a1, a2, x, y, z, v;
+    v = 0;
+    x = 1;
+    let num1 = [];
+    let num2 = [];
+    let num3 = [];
+    let num4 = [];
+    e1 = prompt('Anna ehdokkaiden lukumäärä.');
+    e1 = parseInt(e1);
+    while(x <= e1) {
+          e3 = prompt('Anna äänestysnumero ehdokkaalle numero ' + x);
+          if(e3 === 0){
+            alert('Äänestysnumero ei voi olla 0.');
+          }
+          else{
+            num2.push(e3);
+            x++;
+          }
+    }
+    n1 = e1 - 1;
+    x = 0;
+    a1 = prompt('Anna äänestäjien lukumäärä.');
+    a1 = parseInt(a1);
+    while(x < a1){
+      n5 = x + 1;
+      a2 = prompt('Äänestäjä numero ' + n5 + ', anna haluamasi ehdokkaa äänestysnumero, tai 0 jos et halua äänestää');
+      if(x === 0){
+        x++;
+      }
+      else{
+        num3.push(a2);
+        v++;
+        x++;
+      }
+
+    }
+    y = 0;
+    while(y < e1) {
+      x = 0;
+      z = 0;
+      n3 = num3[y];
+      while (x < v) {
+        n2 = num2[x];
+        if(n2 === n3){
+          z++;
+          x++;
+        }
+        else if(x === n1){
+          num1[y] = num1.push(z);
+          num4[y] = num4.push(z);
+          x++;
+        }
+        else{
+          x++;
+        }
+      }
+      y++;
+    }
+    x = 0;
+    y = 0;
+    z = 1;
+    num4 = num4.sort((a, b) => b - a);
+    n4 = num4[0];
+
+    while(x <= 0){
+      e2 = num1[y];
+      if(e2 === n4){
+        x = 1;
+      }
+      else{
+        y++;
+        z++;
+      }
+    }
+    alert('Voittaja on ehdokas äänestysnumerolla ' + z);
+
+
+
+</script>
+</body>
+</html>

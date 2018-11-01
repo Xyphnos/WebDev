@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, n2, n3, n4, x, y, med;
+    y = 0;
+    let am = [];
+    x = 0;
+
+    while(x == 0){
+      n1 = prompt('Anna luku, tulosta mediaani antamalla nolla. Nollaa ei lasketa mediaaniin mukaan.');
+      if(n1 == 0){
+        x = 1;
+      }
+      else{
+        am.push(n1);
+        y++;
+      }
+    }
+    am.sort((a, b) => a - b);
+    alert(am);
+    n2 = y % 2;
+    if(n2 != 0){
+      n3 = y - 1;
+      n4 = n3 / 2;
+      med = n4;
+      alert('Lukujen mediaani on ' + am[med]);
+    }
+    else{
+      n3 = (y / 2)-1;
+      n4 = n3 + 1;
+      med = (+am[n3] + +am[n4]) / 2;
+      alert('Lukujen mediaani on ' + med);
+    }
+</script>
+</body>
+</html>

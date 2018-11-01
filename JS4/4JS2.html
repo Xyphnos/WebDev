@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, n2, x, y;
+    y = 0;
+    x = 1;
+    let nam = [];
+    n1 = prompt('Anna osallistujien määrä.');
+    while(x <= n1){
+      n2 = prompt('Anna osallistujan nimi.');
+      nam.push(x + '. ' + n2);
+      document.write("<p>" + nam[y] + "</p>");
+      x++;
+      y++;
+    }
+</script>
+</body>
+</html>

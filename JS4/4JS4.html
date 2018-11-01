@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, x, y;
+    x = 0;
+    y = 0;
+    n1 = 1;
+    let lis = [];
+    while(n1 != 0){
+      n1 = prompt('Anna luku.');
+      lis.push(n1);
+      y++
+    }
+    lis = lis.sort((a, b) => b - a);
+    while(x < y){
+      document.write("<p>" + lis[x] + "</p>");
+      x++
+    }
+</script>
+</body>
+</html>

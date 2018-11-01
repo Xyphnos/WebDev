@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, n2, x, y, z;
+    x = 0;
+    y = 0;
+    let lis = [];
+
+    while(x == 0){
+      z = 0;
+      n1 = prompt('Anna luku väliltä 1-1000, syötä sama luku kahdesti tulostaaksesi numerot.');
+      if(n1 < 1 || n1 > 1000) {
+        alert('Luku On yli 100 tai alle 1.')
+      }
+      else {
+        lis.push(n1);
+        while (z != y) {
+          n2 = lis[z];
+
+          if (n1 == n2) {
+            z = y;
+            x = 1;
+          }
+          else {
+            z++;
+          }
+        }
+        y++;
+      }
+    }
+    z = 0;
+    document.write('<ul>');
+    while(z < y){
+      document.write('<li>' + lis[z] + '</li>');
+      z++;
+    }
+    document.write('</ul>');
+</script>
+</body>
+</html>

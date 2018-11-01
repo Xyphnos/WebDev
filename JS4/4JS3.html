@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, x, y;
+    x = 0;
+    y = 0;
+    let nam = [];
+    while(x < 6){
+      n1 = prompt('Anna koiran nimi.');
+      nam.push(n1);
+      x++;
+    }
+    nam.sort();
+    while(y < 6){
+      document.write("<p>" + nam[y] + "</p>");
+      y++;
+    }
+</script>
+</body>
+</html>
