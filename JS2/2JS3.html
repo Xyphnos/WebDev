@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let su, hg, r1;
+    r1 = 0;
+    while (r1 == 0) {
+      su = prompt('Oletko nainen vai mies?');
+      if (su == 'mies') {
+        hg = prompt('Anna hemoglobiiniarvosi.');
+        if (134 > hg) {
+          window.alert('Hemoglobiinisi on matala.');
+        }
+        else if (195 < hg) {
+          window.alert('Hemoglobiinisi on korkea.');
+        }
+        else {
+          window.alert('Hemoglobiinisi on normaali');
+        }
+        r1 = 1;
+      }
+      else if (su == 'nainen') {
+        hg = prompt('Anna hemoglobiiniarvosi.');
+        if (117 > hg) {
+          window.alert('Hemoglobiinisi on matala.');
+        }
+        else if (175 < hg) {
+          window.alert('Hemoglobiinisi on korkea.');
+        }
+        else {
+          window.alert('Hemoglobiinisi on normaali');
+        }
+        r1 = 1;
+      }
+      else {
+        window.alert('Typo tai suuria kirjaimia havaittu, koita uudestaan.');
+      }
+    }
+</script>
+</body>
+</html>

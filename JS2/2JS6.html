@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let no1, no2, no3, no4;
+    no1 = prompt('Anna vuosiluku ja kerron onko se karkausvuosi.');
+    no2 = no1 % 4;
+    if ( no2 == 0 ){
+      no3 = no1 % 100;
+      if( no3 == 0 ){
+        no4 = no1 % 400;
+        if ( no4 == 0){
+          window.alert('vuosi on karkausvuosi.');
+        }
+        else{
+          window.alert('Vuosi ei ole karkausvuosi.');
+        }
+      }
+      else{
+        window.alert('Vuosi on karkausvuosi.');
+      }
+    }
+    else{
+      window.alert('Vuosi ei ole karkausvuosi');
+    }
+</script>
+</body>
+</html>

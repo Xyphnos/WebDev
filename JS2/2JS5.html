@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let c, no1, no2, a;
+    a = 0;
+    c = window.confirm('Lasketaanko neliöjuuri?');
+    if ( c == true){
+
+      while ( a == 0){
+
+      no1 = prompt('Anna laskettava luku.');
+
+      if ( no1 < 0){
+        window.alert('Negatiivisen luvun neliöjuuri ei ole määritelty');
+      }
+      else{
+        no2 = Math.sqrt(no1);
+        window.alert('Luvun neliöjuuri on ' + no2);
+        a = 1;
+      }
+      }
+    }
+    else{
+      window.alert('Neliöjuurta ei lasketa.')
+    }
+</script>
+</body>
+</html>

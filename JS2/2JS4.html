@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let lo1, lo2, bus;
+    lo1 = prompt('Paljonko lompakossasi on rahaa?');
+    bus = prompt('Paljonko bussilippu maksaa?');
+    if (lo1 >= bus) {
+      lo2 = +lo1 - +bus;
+      window.alert('Ostit bussilipun, lompakossasi on jäljellä ' + lo2 + ' euroa.');
+    }
+    else{
+      window.alert('Sinulla ei ollut tarpeeksi rahaa bussilippuun, lompakossasi on ' + lo1 + ' euroa.');
+    }
+</script>
+</body>
+</html>
