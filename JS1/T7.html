@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let saldo, korko, lk, ls;
+    saldo = prompt('Anna tilisi saldo.');
+    korko = prompt('Anna vuosittainen korkoprosenttisi.');
+    korko = korko / 100;
+    lk = saldo * korko;
+    ls = +saldo + lk;
+    ls = parseFloat(ls).toFixed(2);
+    lk = parseFloat(lk).toFixed(2);
+    window.alert('Saldosi on kasvanut vuoden loppuun mennessä ' + lk + ' euroa ja loppusumma koron lisäyksen jälkeen on ' + ls);
+</script>
+</body>
+</html>

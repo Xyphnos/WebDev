@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let leivi, naula, luoti, gram, gram2, kilo;
+    leivi = prompt('Anna massan leiviskät.');
+    naula = prompt('Anna massan naulat.');
+    luoti = prompt('Anna massan luodit.');
+    leivi = leivi * 20;
+    naula = (+naula + +leivi) * 32;
+    luoti = +luoti + +naula;
+    gram = luoti * 13.5;
+    gram2 = gram % 1000;
+    kilo = (+gram - +gram2) / 1000;
+    window.alert('Antamasi paino on ' + kilo + ' kilogrammaa ja ' + gram2 + ' grammaa.');
+</script>
+</body>
+</html>
