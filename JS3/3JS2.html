@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script>
+    let l1, l2, x;
+    x = 0;
+    while( x == 0) {
+      l1 = prompt('Anna luku josta lasketaan neliojuuri.');
+      if (l1 < 0) {
+        alert('Luku on negatiivinen, anna positiivinen luku.');
+        x = 0;
+      }
+      else{
+        l2 = Math.sqrt(l1);
+        alert('Luvun neliojuuri on ' + l2);
+        x = 1
+      }
+    }
+</script>
+</body>
+</html>

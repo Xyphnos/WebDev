@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  let no1, no2, no3, no4, no5, x;
+  no1 = prompt('Anna aloitusvuosi.');
+  no5 = prompt('Anna lopetusvuosi');
+  x = no1;
+  x = parseInt(x);
+  document.write('<ul>');
+  while (x <= no5) {
+    no2 = x % 4;
+
+    if (no2 == 0) {
+      no3 = x % 100;
+
+      if (no3 == 0) {
+        no4 = x % 400;
+
+        if (no4 == 0) {
+          document.write('<li>' + x + '</li>');
+          x++;
+        }
+        else {
+          x++;
+        }
+      }
+      else {
+        document.write('<li>' + x + '</li>');
+        x++;
+      }
+    }
+    else {
+      x++;
+    }
+  }
+  document.write('</ul>');
+</script>
+</body>
+</html>

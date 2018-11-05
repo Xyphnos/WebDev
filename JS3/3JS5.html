@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  let l1, l2 , l3, l4, l5, l6;
+  l6 = 0;
+  l3 = 1;
+  l1 = prompt('Anna positiivinen kokonaisluku ja kerron onko se alkuluku.');
+  l4 = l1 % 1;
+  l2 = l1;
+  l5 = l1;
+  if(l1 == 1 || 0){
+    alert('Luku on alkuluku.')
+  }
+  else if (l1 < 0) {
+    alert('Luku on negatiivinen ja täten ei ole alkuluku.');
+  }
+  else if (l4 == 0) {
+    if (l2 >= 0) {
+      while (l3 <= l2) {
+        l5 = l1 % l3;
+        if(l5 == 0){
+          l6++
+        }
+        l3++;
+      }
+      if(l6 != 2){
+        alert('luku ei ole alkuluku.');
+      }
+      else{
+        alert('Luku on alkuluku.');
+      }
+    }
+  }
+  else{
+    alert('luku ei ole kokonaisluku.');
+  }
+</script>
+</body>
+</html>

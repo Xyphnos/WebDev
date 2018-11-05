@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let n1, n2, x;
+    var bingo = [];
+    n2 = 0;
+    x = 0;
+    while(x < 25){
+      n1 = Math.floor(Math.random() * 4) + 1;
+      n2 = n2 + n1;
+      bingo.push(n2);
+      x++;
+      n2 = x * 4
+    }
+    bingo = bingo.sort((a, b) => a - b);
+    document.write("<p>" + bingo + "</p>");
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let l1, l2, l3, l4, l5, l6, x, y, z, per, sum;
+    x = 0;
+    l6 = 0;
+    l1 = prompt('Anna arpakuutioiden lukumäärä.');
+    l1 = parseInt(l1);
+    l2 = prompt('Anna haluttu nopista saatava summa.');
+    l2 = parseInt(l2);
+    l3 = l1 * 6;
+    l5 = l2 - l1;
+    if( l3 >= l2 && l5 >= 0){
+      while( x < 10000){
+        z = 1;
+        y = 0;
+        sum = 0;
+        while(y < l1) {
+          l4 = Math.floor(Math.random() * 6) + 1;
+          l4 = parseInt(l4);
+          sum = sum + l4;
+          y++;
+          if (z == l1) {
+            if (sum == l2) {
+              l6++;
+              x++;
+              z = 0;
+              sum = 0;
+            }
+            else {
+              x++;
+              z = 0;
+              sum = 0;
+            }
+          }
+          else{
+            z++;
+          }
+        }
+      }
+      per = (l6/10000)*100;
+      alert('Prosentuaalinen mahdollisuus saada haluamasi summa haluamallasi määrällä noppia on ' + per + '%.');
+    }
+    else{
+      alert('Haluamaasi summaa ei voi saada antamallasi määrää noppia.');
+    }
+</script>
+</body>
+</html>

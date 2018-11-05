@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let no1, no2, no3, x;
+    no3 = 0;
+    x = 0;
+    no1 = prompt('Kuinka monta noppaa heitetään?');
+    no1 = parseInt(no1);
+    while(x < no1){
+      no2 = Math.floor(Math.random() * 5 + 1)
+      no3 = no3 + no2;
+      x++
+    }
+    alert('Noppien summa on ' + no3);
+</script>
+</body>
+</html>
