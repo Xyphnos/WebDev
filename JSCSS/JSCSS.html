@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+<script>
+    //.1
+  let berry = document.getElementById('berry');
+  berry.style.backgroundColor = 'red';
+  console.log(berry);
+  console.log('I found the berry: ' + berry.innerHTML);
+  //.2
+  let squish = document.querySelector('li:nth-child(3)');
+  console.log(squish);
+  console.log('I found the fruit: ' + squish.innerHTML);
+  squish.style.backgroundColor = 'orange';
+  //.3.1
+  let list = document.getElementsByTagName('li');
+  console.log(list);
+  //.3.2
+  for(let i = 0; i < list.length; i++){
+    list[i].style.listStyleType = 'none';
+    console.log(list[i].innerHTML);
+    list[i].style.width = '100px';
+
+    if(list[i].innerHTML === 'Pear'){
+      list[i].style.backgroundColor = 'green';
+    }
+  }
+  //.4.1
+  let all = document.querySelectorAll('li');
+  console.log(all);
+  //.4.2
+  all.forEach(function(element){
+    console.log(element.innerHTML);
+    element.style.borderStyle = 'solid';
+    });
+
+</script>
+</body>
+</html>
