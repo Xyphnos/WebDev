@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  let v = prompt('Anna luku');
+  const fibo = (am) => {
+    let y = 0;
+    let x = 0;
+    let i = 0;
+    let l = 0;
+    let z = [];
+    const v = (a, b) => (a + b);
+    while (y < am) {
+      if (y < 2) {
+        y++;
+        x = 1;
+        z.push(x);
+      }
+      else {
+        i = y - 1;
+        l = y - 2;
+        x = v(z[l], z[i]);
+        z.push(x);
+        y++;
+      }
+    }
+    return z;
+  };
+
+  let f = fibo(v);
+  alert(f);
+</script>
+</body>
+</html>

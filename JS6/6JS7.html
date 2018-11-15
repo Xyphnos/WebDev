@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function parilliset(no) {
+      let v1 = no.length;
+      let y = 0;
+      let v2 = 0;
+      let v3 = 0;
+      let du = [];
+      while(y < v1){
+        v2 = no[y];
+        v3 = v2 % 2;
+        if(v3 === 0){
+          du.push(v2);
+          y++;
+        }
+        else{
+          y++;
+        }
+      }
+      return du;
+    }
+</script>
+</body>
+</html>

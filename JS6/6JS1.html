@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<button id="Bu">Aloita</button>
+<script>
+  let v1 = document.getElementById('Bu');
+  v1.addEventListener('click', muunnos);
+  function muunnos() {
+    v2 = prompt('Anna nesteen määrä gallonoina.');
+    v2 = parseFloat(v2);
+    let a = v2 / 3.785;
+    alert('Määrä litroina on ' + a);
+  }
+</script>
+</body>
+</html>

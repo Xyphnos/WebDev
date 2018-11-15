@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let v1 = prompt('Anna ensimmäinen luku.');
+    let v2 = prompt('Anna toinen luku.');
+    let v3 = prompt('Anna kolmas luku.');
+    let f = sort(v1, v2, v3);
+    function sort(st, nd, rd) {
+      let lista = [st, nd, rd];
+      lista.sort((a, b) => b - a);
+      return lista[0];
+    }
+    alert('suurin luku on ' + f);
+
+</script>
+</body>
+</html>
