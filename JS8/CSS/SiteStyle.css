@@ -1,0 +1,107 @@
+.starti{
+    position: static;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 50px;
+    margin-top: -25px; /*set to a negative number 1/2 of your height*/
+    margin-left: -250px;
+    font-size: 30px;
+}
+.searchi{
+    position: static;
+    width: 400px;
+    height: 25px;
+    margin-left: -50px;
+    margin-top: 5px;
+    padding-bottom: 0;
+    font-size: 15px;
+}
+.startb{
+    position: static;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+    margin-top: -5px; /*set to a negative number 1/2 of your height*/
+    margin-left: -50px;
+    font-size: 18px;
+}
+.searchb{
+    position: static;
+    margin-top: -25px; /*set to a negative number 1/2 of your height*/
+    margin-left: -50px;
+    padding-top: 3px;
+    height: 32px;
+    width: 100px;
+    font-size: 15px;
+}
+.row{
+    display: flex;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+    float: left;
+    margin: auto;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 576px;
+    height: 620px;
+    padding-left: 15px;
+    float: left;
+    margin: auto;
+    border-style: solid;
+    border-color: gray;
+    content: "";
+    clear: both;
+    background-color: dimgray;
+}
+.image{
+    padding-top: 5px;
+    height: 295px;
+    width: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(black, whitesmoke);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.searchd{
+    position: static;
+    margin-top: 30%;
+    margin-left: 50%;
+    width: 100%;
+    height: 50px;
+}
+.movie-info{
+    width: 100%;
+}
+h5{
+    color: white;
+}
+p{
+    color: white;
+
+}
+a{
+    color: lightskyblue;
+}
